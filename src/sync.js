@@ -14,7 +14,6 @@ export default config => {
 
   const inbound = makeEncryptor(state => {
     const encryptor = (data, secretKey) => {
-      console.log("encrypting with key: ", secretKey);
       const result = AES.encrypt(stringify(data), secretKey).toString()
       return result;
     };
@@ -23,7 +22,6 @@ export default config => {
 
   const outbound = makeDecryptor(state => {
     const decryptor = (data, secretKey) => {
-      console.log("decrypting with key: ", secretKey);
       const result = JSON.parse(AES.decrypt(data, secretKey).toString(CryptoJSCore.enc.Utf8));
       return result;
     }
