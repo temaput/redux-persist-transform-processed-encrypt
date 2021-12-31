@@ -44,7 +44,7 @@
     "jest": "^18.1.0",
     "prettier": "^1.8.2",
     "redux": "^3.7.2",
-    "redux-persist": "^5.3.4"
+    "redux-persist": "^6.0.0"
   },
   "jest": {
     "testPathIgnorePatterns": [
