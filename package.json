@@ -30,7 +30,7 @@
   ],
   "peerDependencies": {
     "redux": ">3.0.0",
-    "redux-persist": "^5.x.x"
+    "redux-persist": "^6.x.x"
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1",
